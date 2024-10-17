@@ -17,7 +17,7 @@ function App() {
 
   // Fetch Bible verses
   useEffect(() => {
-    fetch('/bible-verses.json')
+    fetch(`${process.env.PUBLIC_URL}/bible-verses.json`)
       .then((response) => response.json())
       .then((data) => setVerses(data.verses))
       .catch((error) => console.error('Error fetching the JSON:', error));
@@ -83,9 +83,7 @@ function App() {
           }}
         >
           <p>"{randomVerse.text}"</p>
-          <p>- {randomVerse.book}-{randomVerse.chapter}:{randomVerse.verse}
-
-          </p>
+          <p>- {randomVerse.book}-{randomVerse.chapter}:{randomVerse.verse}</p>
         </div>
       )}
 
