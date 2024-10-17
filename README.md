@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Getting Started with Create React App  <br>
+<h2> Page is Live at : https://amruthakalyan.github.io/bibleVerseReact/  </h2> <br> 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
