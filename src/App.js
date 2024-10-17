@@ -36,13 +36,21 @@ function App() {
   // Download the verse as an image
   const downloadVerseImage = () => {
     const verseElement = document.getElementById('verse-container');
-    html2canvas(verseElement).then((canvas) => {
-      const link = document.createElement('a');
-      link.download = 'bible-verse.png';
-      link.href = canvas.toDataURL();
-      link.click();
-    });
+  
+    // Create an Image object to ensure background image is loaded
+    const image = new Image();
+    image.src = backgroundImage;
+    image.crossOrigin = "anonymous"; // Ensure CORS is allowed
+    image.onload = () => {
+      html2canvas(verseElement, { useCORS: true }).then((canvas) => {
+        const link = document.createElement('a');
+        link.download = 'bible-verse.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      });
+    };
   };
+  
 
   return (
     <div style={{ padding: '20px', textAlign: 'center' }}>
