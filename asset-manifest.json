@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/amruthakalyan/bibleVerseReact/static/css/main.e6c13ad2.css",
+    "main.js": "/amruthakalyan/bibleVerseReact/static/js/main.bd6a8957.js",
+    "index.html": "/amruthakalyan/bibleVerseReact/index.html",
+    "main.e6c13ad2.css.map": "/amruthakalyan/bibleVerseReact/static/css/main.e6c13ad2.css.map",
+    "main.bd6a8957.js.map": "/amruthakalyan/bibleVerseReact/static/js/main.bd6a8957.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.bd6a8957.js"
+  ]
+}
