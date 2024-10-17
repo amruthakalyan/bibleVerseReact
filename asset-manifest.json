@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/amruthakalyan/bibleVerseReact/static/js/main.a1b394ac.js",
-    "index.html": "/amruthakalyan/bibleVerseReact/index.html",
-    "main.a1b394ac.js.map": "/amruthakalyan/bibleVerseReact/static/js/main.a1b394ac.js.map"
+    "main.js": "./static/js/main.3776d530.js",
+    "index.html": "./index.html",
+    "main.3776d530.js.map": "./static/js/main.3776d530.js.map"
   },
   "entrypoints": [
-    "static/js/main.a1b394ac.js"
+    "static/js/main.3776d530.js"
   ]
 }
