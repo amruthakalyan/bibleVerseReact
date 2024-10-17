@@ -15,7 +15,7 @@ function App() {
     'https://th.bing.com/th/id/OIP.QIT2OGzAJGKna6RyctbDqAHaEK?rs=1&pid=ImgDetMain',
   ];
 
-  // Fetch Bible verses
+  // Fetch Bible verses from local JSON file
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/bible-verses.json`)
       .then((response) => response.json())
@@ -83,7 +83,7 @@ function App() {
           }}
         >
           <p>"{randomVerse.text}"</p>
-          <p>- {randomVerse.book}-{randomVerse.chapter}:{randomVerse.verse}</p>
+          <p>- {randomVerse.book} {randomVerse.chapter}:{randomVerse.verse}</p>
         </div>
       )}
 
